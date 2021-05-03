@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 $mysqli = new mysqli("mysql.eecs.ku.edu", "mefelsen", "evog9ooY", "mefelsen");
 
 if ($mysqli->connect_errno) {
-  printf("Connect failed: %s\n", $mysqli->connect_error);
+  printf("Not Connect: %s\n", $mysqli->connect_error);
   exit();
 }
 
